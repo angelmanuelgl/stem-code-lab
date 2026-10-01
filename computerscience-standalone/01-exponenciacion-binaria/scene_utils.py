@@ -58,7 +58,11 @@ def formula(tex: str, size: float = 42, color: str = TEXT_MAIN) -> MathTex:
 def card(title: str, value: str, color: str, width: float = 5.2) -> VGroup:
     box = RoundedRectangle(width=width, height=1.65, corner_radius=0.16,
                            stroke_color=color, fill_color=PANEL_COLOR, fill_opacity=1)
-    value_mobject = formula(value, 35) if value.isdecimal() else label(value, 35)
+    is_math_expr = value.isdecimal() or "^" in value
+    if is_math_expr:
+        value_mobject = formula(value.replace("·", r" \cdot "), 35)
+    else:
+        value_mobject = label(value, 35)
     words = VGroup(label(title, 21, color), value_mobject).arrange(DOWN, buff=0.22)
     if words.width > width - 0.4:
         words.scale_to_fit_width(width - 0.4)

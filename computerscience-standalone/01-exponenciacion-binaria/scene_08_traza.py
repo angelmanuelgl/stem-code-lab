@@ -12,7 +12,7 @@ class Escena08Traza(Scene):
         mode = label("Cálculo módulo 1 000 000 007", 21, COLOR_CYAN).move_to(UP * 0.7)
         self.play(FadeIn(mode))
         # [TRIGGER_2] Estado inicial.
-        res, base = 1, 3
+        res, base = 1, 3 
         res_card = card("res · acumulador", str(res), COLOR_OPTIMAL, 4.7).move_to(LEFT * 3.3 + DOWN * 0.6)
         base_card = card("base · potencia actual", str(base), COLOR_MODULO, 4.7).move_to(LEFT * 3.3 + DOWN * 2.5)
         pointer = Triangle(color=COLOR_CYAN, fill_opacity=1).scale(0.12).next_to(bits[4], DOWN, buff=0.12)
