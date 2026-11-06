@@ -4,7 +4,7 @@ Primero, la limitación técnica, porque cambia el plan de rodaje. Y ojo con el 
 
 ## 1. Qué sí y qué no puedes grabar
 
-Según el itinerario, estas son tus ventanas reales:
+Según emnl itinerario, estas son tus ventanas reales:
 
 | Momento | ¿Grabable? | Qué aprovechar |
 |---|---|---|
