@@ -1,30 +1,30 @@
+"""Gancho de apertura, adaptado a theme.py."""
 from manim import *
+from base_theme import BaseScene, formula
+from theme import BG_COLOR, TEXT_MAIN, ACCENT_VINO, ACCENT_TERRACOTTA
 
 
-class Gancho(Scene):
-    """Apertura breve y tensa: escala de tiempo, equipo y computadora."""
-
+class Gancho(BaseScene):
     def construct(self):
-        self.camera.background_color = BLACK
         beats = [
-            (r"5\ \text{HORAS}", 1.05),
-            (r"3\ \text{PERSONAS}", 1.00),
-            (r"1\ \text{COMPUTADORA}", 0.86),
+            (r"5\ \text{HORAS}", ACCENT_TERRACOTTA),
+            (r"3\ \text{PERSONAS}", TEXT_MAIN),
+            (r"1\ \text{COMPUTADORA}", ACCENT_VINO),
         ]
-        for text, hold in beats:
-            title = MathTex(text, color=WHITE).scale(1.1)
-            self.play(FadeIn(title, shift=0.18 * UP), run_time=0.45)
-            self.wait(hold)
-            self.play(FadeOut(title, shift=0.12 * DOWN), run_time=0.35)
-
+        for expression, color in beats:
+            item = formula(expression, 54, color)
+            self.play(FadeIn(item, shift=0.15 * UP), run_time=0.8)
+            self.wait(1.6)
+            self.play(FadeOut(item, shift=0.1 * DOWN), run_time=0.65)
         final = VGroup(
-            Tex(r"Y un conjunto de problemas", color=WHITE),
-            Tex(r"que nadie en el planeta", color=WHITE),
-            Tex(r"ha visto antes.", color=WHITE),
-        ).arrange(DOWN, buff=0.22).scale(0.78)
-        self.play(Write(final[0]), run_time=0.8)
-        self.wait(0.35)
-        self.play(Write(final[1]), run_time=0.8)
-        self.play(Write(final[2]), run_time=0.65)
-        self.wait(1.5)
-        self.play(FadeOut(final), run_time=0.5)
+            Tex(r"Y un conjunto de problemas", color=TEXT_MAIN, font_size=36),
+            Tex(r"que nadie en el planeta", color=TEXT_MAIN, font_size=36),
+            Tex(r"ha visto antes.", color=ACCENT_VINO, font_size=40),
+        ).arrange(DOWN, buff=0.28)
+        self.play(Write(final[0]), run_time=1.0)
+        self.wait(0.6)
+        self.play(Write(final[1]), run_time=1.0)
+        self.wait(0.6)
+        self.play(Write(final[2]), run_time=1.1)
+        self.wait(2.2)
+        self.play(FadeOut(final), run_time=0.75)
