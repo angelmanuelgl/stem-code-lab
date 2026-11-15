@@ -1,5 +1,8 @@
 # Guion de Voz en Off: ICPC México 2026 (Segunda Parte)
 
+
+
+------------------------- 
 ## 1.
 
 Voz en off: 
@@ -15,29 +18,25 @@ Pero en la ICPC la lógica cambia por completo. Aquí los problemas vienen disfr
 // MANIM 
 > **Especificación visual (Manim CE):** Centrar la ficha narrativa y retirar capas sucesivas de texto. Debajo, mostrar tres ejemplos alternativos del “esqueleto”: grafo (nodos/aristas), frecuencias (tabla) y geometría (puntos/segmentos). Animar cada traducción por separado con `Transform`; dejar claro que son posibles estructuras ocultas, no tres estructuras simultáneas del mismo problema.
 
-Y cuando abres ese enunciado por primera vez, con el reloj corriendo implacable, te enfrentas de golpe a un menú gigantesco de técnicas: programación dinámica, árboles de sufijos, teoría de grafos, matemáticas avanzadas, flujos máximos, recorrido de Euler... y ninguna viene marcada. Tienes que adivinar el camino correcto entre decenas de opciones, muchas de las cuales tal vez ni siquiera conozcas.
+Y cuando abres ese enunciado por primera vez, con el timepo corriendo contra reloj, te enfrentas de golpe a un menú gigantesco de técnicas: y ninguna viene marcada. Tienes que adivinar el camino correcto entre decenas de opciones, muchas de las cuales tal vez ni siquiera conozcas.
 
 // MANIM
 > **Especificación visual (Manim CE):** Distribuir en tarjetas las técnicas nombradas y mantener un reloj visible. Ninguna tarjeta está marcada. Un cursor recorre varias opciones; las no elegidas quedan atenuadas, pero ninguna se presenta como solución correcta porque el guion no especifica un problema concreto. Animar el reloj y enfatizar “ninguna viene marcada”.
 
-De hecho, una de las habilidades más críticas aquí no es saber resolverlo todo porque resolver el set completo es humanamente imposible, asi esta diseñado, sino saber elegir tus batallas. En esta final, los mejores equipos del país lograron resolver entre 8 y 10 problemas; muy pocos pasaron de 11, y lo normal para la gran mayoría se queda entre 2 y 6 aciertos bien peleados. Saber qué problema sí puedes atacar y cuál te va a hacer perder valiosas horas es la diferencia entre subir al podio o quedarte fuera.
 
-// MANIM
-> **Especificación visual (Manim CE):** Mostrar tarjetas de problemas y un reloj de concurso. El equipo selecciona una; otra queda pospuesta y su coste de tiempo se ilustra con una barra que se consume. Presentar aparte los datos tal como están en este borrador: mayoría 2–6, mejores 8–10 y pocos >11. Usar intervalos etiquetados, sin inventar una distribución ni interpolar valores.
+De hecho, una de las habilidades más críticas aquí no es saber resolverlo todo porque resolver el set completo es humanamente imposible, así está diseñado, hay que saber elegir tus batallas. Por ejemplo en esta final, los mejores equipos del país lograron resolver entre 8 y 9 problemas; muy pocos pasaron de ahí, mientras que la mediana para el resto de los equipos se quedó en apenas 4 problemas resueltos, moviéndose la gran mayoría en un rango de 2 a 6 problemas. Saber qué problema sí puedes atacar y cuál te va a hacer perder valiosas horas es la diferencia entre subir al podio o quedarte fuera.
 
-De hecho, una de las habilidades más críticas aquí no es saber resolverlo todo porque resolver el set completo es humanamente imposible, así está diseñado, hay que saber elegir tus batallas. En esta final, los mejores equipos del país lograron resolver entre 8 y 11 problemas; muy pocos pasaron de ahí, mientras que la mediana para el resto de los equipos se quedó en apenas 3 aciertos, moviéndose la gran mayoría en un rango de 2 a 6 problemas bien peleados. Saber qué problema sí puedes atacar y cuál te va a hacer perder valiosas horas es la diferencia entre subir al podio o quedarte fuera.
-
-// MANIM
-> **Especificación visual (Manim CE):** Repetir la metáfora de selección con una distribución esquemática de aciertos: rango mayoritario 2–6, mediana marcada en 3, mejores 8–11 y “pocos >11”. Animar una tarjeta a “atacar” y otra a “posponer” mientras corre el reloj. **Dato editorial por confirmar:** este párrafo contradice al anterior (8–11/8–10) y afirma mediana 3; validar cifras y conservar una sola versión antes del render final.
+------------------------- 
 ---
 
 ## 2
 
 Voz en off: 
-Para entenderlo mejor, veamos un ejemplo real. Este fue uno de mis favoritos del torneo, el **Problema C: Clumsy Courier**. Como explicarlo a fondo no es el objetivo de este video eterno, les dejo el enunciado completo en pantalla para los más curiosos, y si les interesa, mi próximo video puede dedicarse enteramente a resolverlo paso a paso.
+Para entenderlo mejor, veamos un ejemplo real. Este fue uno de mis favoritos del contest, el **Problema C: Clumsy Courier**. 
+Explicarlo a fondo no es el objetivo, Les dejo el enunciado completo en pantalla para los más curiosos, y si les interesa, mi próximo video puede dedicarse enteramente a resolverlo paso a paso. Mi proceso de pensamiento, como llegue a una idea, como concrete y formalice la idea, y como lo implemente
 
 
-// MANIM: presentar el enunciado completo en pantalla, dividido en paneles legibles.
+// MANIM:  primero aparece el titulo, luygo todo el texto, si puediera dar el estilo que se esta leyendo una hoja, osea como que aprece una hoja con eso y se va subiendo, algo asi
 > **Especificación visual (Manim CE):** Conservar el enunciado original en inglés y presentarlo en cuatro paneles legibles: (1) cuadrícula R×C, numeración y extremos (1,1)/(R,C); (2) movimientos ortogonales y límites; (3) exactamente U movimientos Up y L Left, permitiendo repetir vértices; (4) contar secuencias distintas módulo 998,244,353, más Input/Output. Mantener una mini cuadrícula con inicio/destino en cada panel. Usar `FadeIn` y desplazamiento vertical; no reducir todo el texto a una sola lámina ilegible ni omitir restricciones.
 > **Problem C - Clumsy Courier**
 > A courier must deliver a package across a city. The city's streets form a rectangular grid with $R$ horizontal streets and $C$ vertical streets. On the city map, the horizontal streets are numbered from $1$ to $R$ from top to bottom, and the vertical streets from $1$ to $C$ from left to right. Intersection $(r, c)$ is where horizontal street $r$ meets vertical street $c$. The courier starts at $(1, 1)$ and must deliver the package at $(R, C)$.
@@ -58,26 +57,60 @@ Para entenderlo mejor, veamos un ejemplo real. Este fue uno de mis favoritos del
 > **Output**
 > Output a single line with an integer indicating the number of valid routes. Since this number can be large, output the remainder of dividing it by $998,244,353$.
 
-Voz en off: 
-En pocas palabreas para no perdernos en el texto: te quieres mover en una cuadrícula desde una esquina hasta la opuesta usando movimientos hacia la derecha y hacia abajo, pero con una trampa: te tienes que regresar obligatoriamente una cantidad fija de veces hacia arriba o hacia la izquierda ($U$ y $L$ movimientos específicos). 
 
-// MANIM
-> **Especificación visual (Manim CE):** Transformar el enunciado en una cuadrícula pequeña. Rotular inicio (1,1), destino (R,C), y las direcciones Down/Right como avance base; después introducir Up/Left como cantidades obligatorias U/L. Mantener todos los movimientos dentro de la cuadrícula y dejar explícito que el recorrido puede volver a visitar intersecciones.
 
-Para que se animen a jugar un poco con el problema: imaginen una cuadrícula pequeña de $2 \times 2$. Si queremos ir de la esquina superior izquierda a la inferior derecha usando cero movimientos hacia arriba y cero hacia la izquierda, ¿cuántos caminos válidos tenemos? Exacto, solo dos formas directas. 
+// MANIM nueva escena // aparece una cuadricula 
 
-// MANIM
-> **Especificación visual (Manim CE):** Dibujar los cuatro vértices de la cuadrícula 2×2, rotulados por fila/columna, con inicio arriba a la izquierda y meta abajo a la derecha. Fijar U=L=0. Trazar y reiniciar entre las únicas secuencias válidas RD y DR; el contador pasa de 0 a 2. No mostrar desvíos.
+En pocas palabreas para no perdernos en el texto: te quieres mover en una cuadrícula desde una esquina de arriba a la izquierda hasta la opuesta usando movimientos 
+
+// MANIM resaltando salida y meta 
+
+hacia la derecha y hacia abajo, pero con una trampa: te tienes que regresar obligatoriamente una cantidad fija de veces hacia arriba o hacia la izquierda ($U$ y $L$ movimientos específicos). 
+
+// MANIM nueva escena cadricula 3x4 
+
+Si pnemos de ejemplo una cuadricula de 3 x 5. Esto quiere decir que si tenemos 0 moviemintos U y cero moviemintos L el sigueinte es por ejemplo un camino valido
+
+// MANIM aparece un camino valido, se difumina, luego otro, y asi
+
+Por ejemplo con 1 movimienot arriba y 3 izquierda, este un camino valido, ... , este es otro, y este es uno dioferente,  ... , y aqui tenemos otro
+
+Pero no se trata de encontrar uno, si no de contar cuantos hay, puede haber demasiados
+ 
+// MANIM aparce uadricula de 2x2
+
+Para que se animen a jugar un poco con el problema, comiencemos con ejemplos pequeños imaginen una cuadrícula pequeña de $2 \times 2$. 
+
+
+Si queremos ir de la esquina superior izquierda a la inferior derecha usando cero movimientos hacia arriba y cero hacia la izquierda, ¿cuántos caminos válidos tenemos? Exacto, solo dos formas directas. 
+
+// MANIM van aparece unc amino y leugo el toro
+
+Exacto Ir derecha y luego abajo, o primero abajo y luego derecha
+
 
 ¿Y qué pasa si permitimos un movimiento hacia arriba y cero hacia la izquierda? Piénselo un par de segundos... Correcto, tendríamos cuatro caminos diferentes. 
 
-// MANIM
-> **Especificación visual (Manim CE):** Mantener la cuadrícula 2×2 y fijar U=1, L=0. Animar, con reinicio entre recorridos, las cuatro secuencias válidas R-D-U-D, D-R-U-D, D-U-R-D y D-U-D-R. Resaltar U y su regreso D; comprobar que cada paso permanece dentro de la malla. El contador suma hasta 4.
+
+
+Derecha Izquierda Derecha Abajo
+// MANIM  aparece el camino y a la dercha o abajo o enalgun espacio vaio una flecha a rriba una copia de la caudricula en chicuqito con el nuevo camino
+
+Derecha Izquierda Abajo Derecha
+// MANIM  aparece el camino y a la dercha o abajo o enalgun espacio vaio una flecha a rriba una copia de la caudricula en chicuqito con el nuevo camino
+
+Derecha Abajo Izquierda Derecha
+// MANIM  aparece el camino y a la dercha o abajo o enalgun espacio vaio una flecha a rriba una copia de la caudricula en chicuqito con el nuevo camino
+Abajo Derecha Izquierda Derecha
+// MANIM  aparece el camino y a la dercha o abajo o enalgun espacio vaio una flecha a rriba una copia de la caudricula en chicuqito con el nuevo camino
+
+
+
 
 Lo verdaderamente elegante y retador aquí no es probar a mano, sino diseñar un algoritmo eficiente que pueda contar estos trayectos para una cuadrícula gigante y para cualquier cantidad arbitraria de desvíos. Si quieren que armemos la solución completa de este problema, déjenlo en los comentarios.
 
-// MANIM
-> **Especificación visual (Manim CE):** Hacer zoom desde 2×2 a una cuadrícula R×C extensa. Multiplicar visualmente los recorridos y dejar de dibujarlos uno por uno; reemplazarlos por un contador abstracto de rutas/estados con U y L como parámetros. Cerrar con “contar, no enumerar”. No mostrar algoritmo, fórmula ni complejidad que el guion todavía no revela.
+// MANIM animacion de salidiaa de todo 
+
 
 ---
 
@@ -88,8 +121,11 @@ Mientras tanto, veamos cómo operan los equipos en la vida real. Aquí la progra
 
 // CLIPS de los de la UADY
 
+Como pueden aqui en la ICPC al reoslver problema se crea una combinacion unica de 
+trabajo bajo presión extrem, pensamiento analítico profundo, y resiliencia.Y eso  es exactamente la razón por la cual las empresas tecnológicas más importantes de mexico y del mundo vienen aqui, no es por casualidaad, aqui se encuntrasn empresas como Google claude Jetbrains,Deep Main, Huawei  oracle, entre otras
+ stán aquí buscando talento de élite. 
 
-Esta combinación única trabajo bajo presión extrema y sobretodo de pensamiento analítico profundo, y resiliencia es exactamente la razón por la cual las empresas tecnológicas más importantes del mundo no vienen por casualidad: están aquí buscando talento de élite. 
+
 
 // CLIPS de reclutadores
 

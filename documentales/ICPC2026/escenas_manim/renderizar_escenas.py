@@ -16,11 +16,12 @@ from pathlib import Path
 
 SCENAS_INDEPENDIENTES = [
     # ("sc00_gancho.py", ["Gancho"]),
-    ("sc10_conceptos.py", [
-        "EscuelaVsICPC", "PelarCebolla", "MenuTecnicas",
-                            "DistribucionProblemas", ]),
-    # ("sc20_courier.py", ["EnunciadoCourier", "TraduccionCourier", "CourierBase2x2",
-    #                       "CourierOneUp", "CourierEscala"]),
+    # ("sc10_conceptos.py", [
+    #     "EscuelaVsICPC", "PelarCebolla", "MenuTecnicas",
+    #                         "DistribucionProblemas", ]),
+    ("sc11_problemc.py", [
+            # "EnunciadoCourier",
+            "IntuicionCourier"]),
     # ("sc30_final.py", ["RolesEquipo", "TalentoReclutadores", "EntradaResultados",
     #                     "FiltroEquipos", "MedallasPorRendimiento", "TablaTop25"]),
     # ("sc40_clasificacion.py", ["AvanceLATAM", "ComparacionPuestos", "FactoresLogisticos",
