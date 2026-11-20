@@ -21,9 +21,20 @@ SCENAS_INDEPENDIENTES = [
     # ("sc11_problemc.py", [
     #         "EnunciadoCourier",
     #         "IntuicionCourier"]),
-    ("sc12_resultados.py", [
-            "EmbudoClasificacion",
-            "TablaTop25Latam"] )
+    # ("sc12_resultados.py", [
+    #         "EmbudoClasificacion",
+    #         "TablaTop25Latam"] ),
+    ("sc21_recursos_fondo.py", ["CierrePulsosCuadricula"] ),
+    # ("sc20_recursos_placa.py", [
+    #     "PlecaCarlosSegura",
+    #     "PlecaMariaRosario",
+    #     "PlecaRafaelNorman",
+    #     "PlecaEdgardoFranco",
+    #     "PlecaRamiroGarcia",
+    #     "PlecaAlexaValls",
+    #     "PlecaCantilever",
+    #     "PlecaGuillot",
+    # ]),
 ]
 
 def main():

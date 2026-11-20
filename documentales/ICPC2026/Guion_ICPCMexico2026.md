@@ -201,7 +201,13 @@ A pesar de estas asperezas reglamentarias, el mérito de cada competidor es inne
 ## 6. 
 
 Voz en off: 
-Para cerrar este recorrido, le preguntamos a varios competidores experimentados y entrenadores qué recomendación le darían a los chavos de preparatoria, secundaria o incluso primaria que ya muestran esa chispa por la programación, matematicas y en general las ciencias exactas
+Para cerrar este recorrido, le preguntamos a entrenadores qué recomendación le darían a los chavos de preparatoria, secundaria o incluso primaria que ya muestran esa chispa por la programación, matematicas las ciencias en general 
 
- 
 // CLIPS: de entrevistas y eso
+
+---
+
+## 7. cierre
+
+Gracias por llegar hasta aquí. Quédate con menos prisa por saberlo todo y más curiosidad por entender el porqué; ahí es donde empieza lo verdaderamente interesante. No importa si estás en primaria, secundaria, prepa o universidad: si disfrutas desarmar un problema y ver cómo funciona, ya diste el primer paso. 
+La curiosidad es el mejor motor para crecer en cualquier área STEM, así que empieza hoy, equivócate rápido y disfruta el proceso de pensar tus propias ideas. Al final, resolver problemas es lo que entrena la mente para cualquier reto en ciencia, matemáticas o tecnología.
