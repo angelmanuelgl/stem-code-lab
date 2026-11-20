@@ -5,7 +5,6 @@ Ejemplos:
     python renderizar_escenas.py -ql
     python renderizar_escenas.py -qh CourierOneUp
     python renderizar_escenas.py -qk sc30_final.py
-    python renderizar_escenas.py --sequence -qh
 """
 from __future__ import annotations
 
@@ -19,22 +18,17 @@ SCENAS_INDEPENDIENTES = [
     # ("sc10_conceptos.py", [
     #     "EscuelaVsICPC", "PelarCebolla", "MenuTecnicas",
     #                         "DistribucionProblemas", ]),
-    ("sc11_problemc.py", [
-            # "EnunciadoCourier",
-            "IntuicionCourier"]),
-    # ("sc30_final.py", ["RolesEquipo", "TalentoReclutadores", "EntradaResultados",
-    #                     "FiltroEquipos", "MedallasPorRendimiento", "TablaTop25"]),
-    # ("sc40_clasificacion.py", ["AvanceLATAM", "ComparacionPuestos", "FactoresLogisticos",
-    #                             "Reconocimiento", "CierreEntrevistas"]),
+    # ("sc11_problemc.py", [
+    #         "EnunciadoCourier",
+    #         "IntuicionCourier"]),
+    ("sc12_resultados.py", [
+            "EmbudoClasificacion",
+            "TablaTop25Latam"] )
 ]
-SECUENCIA_COMPLETA = ("sc01_proceso.py", ["Proceso"])
-
 
 def main():
     parser = argparse.ArgumentParser(description="Renderiza escenas registradas del storyboard.")
     parser.add_argument("--list", action="store_true", help="Muestra módulos y clases disponibles")
-    parser.add_argument("--sequence", action="store_true",
-                        help="Renderiza un solo reel con las escenas en orden narrativo")
     parser.add_argument("--keep-going", action="store_true",
                         help="Continúa tras un fallo y reporta las escenas fallidas al final")
     parser.add_argument("items", nargs="*", help="Banderas de Manim y selectores de escena/archivo")
@@ -45,8 +39,7 @@ def main():
     if args.list:
         for filename, classes in SCENAS_INDEPENDIENTES:
             print(f"{filename}: {', '.join(classes)}")
-        print("sc01_proceso.py: Proceso (reel completo; usar --sequence)")
-        print(f"Escenas independientes: {sum(len(v) for _, v in SCENAS_INDEPENDIENTES)}")
+        print(f"Total de escenas: {sum(len(v) for _, v in SCENAS_INDEPENDIENTES)}")
         return 0
 
     flags = [item for item in items if item.startswith("-")]
@@ -56,9 +49,8 @@ def main():
         parser.error("Elige una sola calidad: -ql, -qm, -qh o -qk.")
     quality_tag = f"_{qualities[0][1:]}" if qualities else ""
 
-    registry = [SECUENCIA_COMPLETA] if args.sequence else SCENAS_INDEPENDIENTES
     selected = []
-    for filename, classes in registry:
+    for filename, classes in SCENAS_INDEPENDIENTES:
         matching = [scene for scene in classes if not selectors or any(
             token in filename.lower() or token in scene.lower() for token in selectors
         )]

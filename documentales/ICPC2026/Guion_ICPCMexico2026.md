@@ -136,75 +136,63 @@ trabajo bajo presión extrem, pensamiento analítico profundo, y resiliencia.Y e
 ## 4
 
 Voz en off: 
-Volviendo de lleno a la competencia: ¿Quiénes ganaron? Hagamos cuentas. 
+Volviendo de lleno a la competencia: ¿Quiénes ganaron? Hagamos cuentas. Iniciamos este camino con **509 equipos** compitiendo a lo largo de las tres fechas clasificatorias. De ese filtro brutal, solo **85 equipos** lograron ganarse un lugar presencial en esta gran final. De ellos, **20 equipos** consiguieron medalla. 
 
-// MANIM
-> **Especificación visual (Manim CE):** Transicionar a un tablero vacío con encabezado “Final Mexicana 2026” y una indicación de que vienen los resultados. Mantener espacio para los conteos siguientes; no anticipar cifras en esta toma.
-
-Iniciamos este camino con **509 equipos** compitiendo a lo largo de las tres fechas clasificatorias. De ese filtro brutal, solo **85 equipos** lograron ganarse un lugar presencial en esta gran final. De ellos, **20 equipos** consiguieron medalla. 
-
-// MANIM
-> **Especificación visual (Manim CE):** Mostrar tres niveles conectados: 509 equipos en las clasificatorias → 85 en la final presencial → 20 medallistas. Animar las cifras en ese orden y conservar siempre las etiquetas de cada conjunto. No inferir porcentajes ni hacer parecer que las 20 medallas son otro filtro de clasificación.
-
-Aquí surge una duda muy común: si es una competencia, ¿por qué hay múltiples medallas de oro, plata y bronce en lugar de un solo campeón absoluto como en los Juegos Olímpicos? A diferencia de una competencia de velocidad, la ICPC mide el rendimiento de los equipos contra un estándar global de dificultad y distribución por porcentajes de participación, premiando a los bloques más destacados de la tabla general.
-
-// MANIM
-> **Especificación visual (Manim CE):** Presentar un tablero ordenado en bloques de oro, plata y bronce para contrastar múltiples medallas con un campeón único. Añadir una regla esquemática rotulada “estándar global de rendimiento” y una nota de “porcentajes de participación”. No inventar umbrales, porcentajes ni cantidades por medalla: el texto no los especifica. Transicionar de este esquema al tablero real.
+// MANIM nnueva escena // Mostrar tres niveles conectados: 509 equipos en las clasificatorias → 85 en la final presencial → 20 medallistas. Animar las cifras en ese orden dejando suficiente pausa y conservar siempre las etiquetas de cada conjunto. 
 
 Veamos cómo quedó el tablero de los mejores equipos del país en esta final:
 
-// MANIM: tabla de los 25 mejores equipos de la final
-> **Especificación visual (Manim CE):** Construir la tabla con puesto, institución, nombre, problemas resueltos y estatus de clasificación. Revelar filas 1–14 y 15–25 en dos paneles o mediante scroll para preservar legibilidad. Mantener el orden y los datos fuente; distinguir “Sí clasificó”, “No” y “No [Invitado / Guest]” con texto además de color. No completar nombres o estatus que la fuente deje incompletos.
+// MANIM: neuva escenas aparce la tabla de los 25 mejores equipos de la final, con suficiente timepo, no aprisas
+> **Especificación visual (Manim CE):** Construir la tabla con 
+| puesto |  institución | nombre | problemas resueltos | 
+mantener el orden y los datos fuente. Por ahora no marcar ni agrgar columna de  “Sí clasificó”, “Noclaisifico”. Marcar de un color mas tenue el  "[Invitado / Guest]” 
+
 1. **ESCOM IPN** — *Domain Expansion "Abraham échate un hint"* (10 problemas — **Sí clasificó**)
-2. **CCM** — *Chatcito, Claudecito y Geminicito - Campeones OMI 2026* (10 problemas — **No [Invitado / Guest]**)
-3. **U de Guanajuato** — *Soy malo y eso es bueno, yo jamás seré bueno y eso no es malo* (9 problemas — **Sí clasificó**)
-4. **UP GDL** — *Prisioneros de Alcatraz* (8 problemas — **Sí clasificó**)
-5. **ITESM Monterrey** — *Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr + 529993244386$)* (8 problemas — **Sí clasificó**)
-6. **UP Bonaterra** — *The good, the bad and the ugly* (8 problemas — **Sí clasificó**)
-7. **FC-UNAM** — *Oasis* (8 problemas — **Sí clasificó**)
-8. **U de Guanajuato** — *ICAxiom* (8 problemas — **Sí clasificó**)
-9. **IT Culiacan** — *Los guerreros más fuertes de wkoder* (8 problemas — **Sí clasificó**)
-10. **UADY** — *Gauss N' Roses* (8 problemas — **Sí clasificó**)
-11. **UANL** — *No te preocupes, mención honorífica también es buen resultado* (8 problemas — **Sí clasificó**)
-12. **UADY** — *PEScapitalista* (8 problemas — **Sí clasificó**)
-13. **Facultad de Ingeniería UNAM** — *:) * (8 problemas — **Sí clasificó**)
-14. **UdG CUCEI** — *Adrián quería que nos pusiéramos un nombre largo por alguna razón, y como no decidimos cuál nombre era el mejor, intentamos pedirle al chatcito que nos generara una lista de nombres más atractivos para ICPC. Estos fueron los nombres que nos sugir* (8 problemas — **Sí clasificó**)
-15. **ITESM GDA** — *Hijos del Puntero* (7 problemas — **No**)
-16. **UADY** — *Tuntunsitos* (7 problems — **No**)
-17. **ESCOM IPN** — *Las Chivas de Milito* (7 problemas — **No**)
-18. **IT Culiacan** — *AD-HOCK* (7 problemas — **No**)
-19. **U de Guanajuato** — *Mäthgic Crüe* (7 problemas — **No**)
-20. **FC-UNAM** — *Claude Opus 4.6* (7 problemas — **No**)
-21. **ITESM Monterrey** — *Data Divas* (6 problemas — **Sí clasificó**)
-22. **ITESM Monterrey** — *ATCSUSMS (Alianza)* (6 problemas — **Sí clasificó**)
-23. **UAM A** — *Seal++* (6 problemas — **Sí clasificó**)
-24. **UASLP** — *Tacos de Schnauzer* (6 problemas — **Sí clasificó**)
-25. **UAEH** — *CapyBaby's* (6 problemas — **Sí clasificó**)
-
----
-
-## 5
-
-Voz en off: 
-Y bien, ¿quiénes avanzan a la siguiente etapa? El objetivo final es conformar a la delegación que representará a México en el **Campeonato Latinoamericano (LATAM Championship)**, donde se medirán las mejores mentes de toda la región. 
+-. **CCM** — *Chatcito, Claudecito y Geminicito - Campeones OMI 2026* (10 problemas — **No [Invitado / Guest]**)
+2. **U de Guanajuato** — *Soy malo y eso es bueno, yo jamás seré bueno y eso no es malo* (9 problemas — **Sí clasificó**)
+3. **UP GDL** — *Prisioneros de Alcatraz* (8 problemas — **Sí clasificó**)
+4. **ITESM Monterrey** — *Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr + 529993244386$)* (8 problemas — **Sí clasificó**)
+5. **UP Bonaterra** — *The good, the bad and the ugly* (8 problemas — **Sí clasificó**)
+6. **FC-UNAM** — *Oasis* (8 problemas — **Sí clasificó**)
+7. **U de Guanajuato** — *ICAxiom* (8 problemas — **Sí clasificó**)
+8. **IT Culiacan** — *Los guerreros más fuertes de wkoder* (8 problemas — **Sí clasificó**)
+9. **UADY** — *Gauss N' Roses* (8 problemas — **Sí clasificó**)
+10. **UANL** — *No te preocupes, mención honorífica también es buen resultado* (8 problemas — **Sí clasificó**)
+11. **UADY** — *PEScapitalista* (8 problemas — **Sí clasificó**)
+12. **Facultad de Ingeniería UNAM** — *:) * (8 problemas — **Sí clasificó**)
+13. **UdG CUCEI** — *Adrián quería que nos pusiéramos un nombre largo por alguna razón, y ...* (8 problemas — **Sí clasificó**)
+14. **ITESM GDA** — *Hijos del Puntero* (7 problemas — **No**)
+15. **UADY** — *Tuntunsitos* (7 problems — **No**)
+16. **ESCOM IPN** — *Las Chivas de Milito* (7 problemas — **No**)
+17. **IT Culiacan** — *AD-HOCK* (7 problemas — **No**)
+18. **U de Guanajuato** — *Mäthgic Crüe* (7 problemas — **No**)
+19. **FC-UNAM** — *Claude Opus 4.6* (7 problemas — **No**)
+20. **ITESM Monterrey** — *Data Divas* (6 problemas — **Sí clasificó**)
+21. **ITESM Monterrey** — *ATCSUSMS (Alianza)* (6 problemas — **Sí clasificó**)
+22. **UAM A** — *Seal++* (6 problemas — **Sí clasificó**)
+23. **UASLP** — *Tacos de Schnauzer* (6 problemas — **Sí clasificó**)
+24. **UAEH** — *CapyBaby's* (6 problemas — **Sí clasificó**)
+25. **Facultad de Ingenieria UNAM** *Alianza de Autismo de Puerto Rico* (6 problemas — **No clasificó**)
 
 
-Por lógica, esperaríamos que pasen estrictamente los mejores posicionados en la tabla general.
 
-// MANIM: resaltar en verde las filas/estatus de quienes avanzan, según la columna de clasificación.
-> **Especificación visual (Manim CE):** Retomar la tabla y marcar en verde el estatus/columna de los equipos que sí avanzan, según los datos del guion. Atenuar el resto sin ocultarlo. Mantener puesto y problemas resueltos visibles y añadir una leyenda textual “clasificó”, de modo que la lectura no dependa solo del color.
+Y bien, ¿quiénes avanzan a la siguiente etapa? El objetivo final es formar a la delegación que representará a México en el **Campeonato Latinoamericano (el LATAM Championship)**, donde se medirán las mejores mentes de toda la región. 
 
-Pero aquí nos topamos con una realidad logística: **no siempre es así**. 
+// MANIM: resaltar en verde las filas de quienes avanzan, según la columna de clasificación, osea esas columans se ponen de fondo verde que vaya de acuerdo a los tonos de las paletas y cse distirnga del fondo pero no haga demasiado contraste. No Atenuar el resto ni ocultarlo. Mantener puesto y problemas resueltos visibles y todo el resto igual
 
-Si observan con atención la tabla, se darán cuenta de que hay equipos ubicados entre los lugares 15 y 19 que, 
-// MANIM: reslatar de negrita brevemente  (como efecto hover o click)
-> **Especificación visual (Manim CE):** Aplicar foco tipo hover a las filas 15–19: contorno o fondo y negritas en la fila, con las demás atenuadas pero legibles. Mantener puesto y número de problemas visibles; retirar el foco antes del siguiente bloque. No atribuir aún una causa de exclusión a cada equipo.
-a pesar de haber resuelto más problemas que equipos clasificados más abajo (como los lugares 20 a 25)
-// MANIM: reslatar de negrita brevemente (como efecto hover o click)
-> **Especificación visual (Manim CE):** Mover el foco a las filas 20–25 y compararlas con 15–19 mediante guías o llaves entre celdas de problemas y estatus, no con flechas de causalidad. Mantener los valores legibles; retirar ambos resaltados al final para enlazar con cuotas, cupos institucionales y sedes.
-se quedaron fuera del boleto directo. 
+Por lógica, esperaríamos que pasen los mejores posicionados en la tabla general. Pero aquí nos topamos con una realidad logística: **no siempre es así**.  Si observan con atención la tabla, se darán cuenta de que hay equipos ubicados entre los lugares 15 y 19 que, 
 
-En la ICPC no todo depende exclusivamente del mérito puro en una sola tabla nacional. Factores como cuotas regionales, cupos por institución y el estatus de sedes juegan un papel determinante; a veces, formar parte de una universidad con plazas asignadas te da una ventaja logística frente a equipos de otras sedes que tuvieron un desempeño superior. 
+// MANIM:  Aplicar foco tipo hover a las filas 15–19: contorno o fondo y negritas en la fila, con las demás atenuadas pero legibles. Mantener puesto y número de problemas visibles; retirar el foco antes del siguiente bloque. No atribuir aún una causa de exclusión a cada equipo.
+
+a pesar de haber resuelto más problemas y haber quedado en mejor lugar, se han quedado afuera
+
+// MANIM: (dejando una pausa audecuada) resalanuevamente como efecto hover anteiror a las filas 20–25 y compararlas con 15–19 mediante guías o llaves entre celdas de problemas y estatus, no con flechas de causalidad. Mantener los valores legibles; retirar ambos resaltados al final para enlazar con cuotas, cupos institucionales y sedes.
+
+Lamentablemente no todo depende exclusivamente del mérito puro en una sola tabla nacional. Factores como cuotas regionales, cupos por institución y el estatus de ciertas escuelas juegan un papel determinante; a veces, formar parte de una universidad con plazas asignadas te da una ventaja logística frente a equipos de otras sedes que tuvieron un desempeño superior. 
+
+
+// MANIM: aparece en texto abajo, texto que no reslte mucho y se pierda ligeramente con el color del fondo
+:otros equipos que tambine claiiuficaron: 49. [FC-UNAM] Gatos Naranjosos (4 problemas),  54. [Facultad de Ingenieria UNAM] K-Pop Demon Coders(4 problemas), 55. [ITESM Monterrey] Sopes (3 problemas)
 
 A pesar de estas asperezas reglamentarias, el mérito de cada competidor es innegable. Todos entregaron horas de esfuerzo absoluto sobre el teclado. Muchas felicidades a todos los participantes, y un reconocimiento especial y muchísimo éxito a los equipos que llevarán la bandera de México al LATAM Championship.
 
@@ -213,6 +201,7 @@ A pesar de estas asperezas reglamentarias, el mérito de cada competidor es inne
 ## 6. 
 
 Voz en off: 
-Para cerrar este recorrido, le preguntamos a varios competidores experimentados y entrenadores qué recomendación le darían a los chavos de preparatoria, secundaria o incluso primaria que ya muestran esa chispa por la programación y matematicas y en general las ciencias exactas
+Para cerrar este recorrido, le preguntamos a varios competidores experimentados y entrenadores qué recomendación le darían a los chavos de preparatoria, secundaria o incluso primaria que ya muestran esa chispa por la programación, matematicas y en general las ciencias exactas
 
+ 
 // CLIPS: de entrevistas y eso
